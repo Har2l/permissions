@@ -37,4 +37,4 @@ try:
     print("=== AFTER ===")
     print_privileges(token)
 except win32api.error as e:
-    print(f"Couldn't open PID {pid}: {e.strerror} — try running as administrator.")
+    print(f"Couldn't open PID {pid}: {e.strerror} - try running as administrator.")
