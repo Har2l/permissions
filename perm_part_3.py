@@ -19,7 +19,7 @@ def enable_privilege(token, privilege_name):
     new_state = [(luid, win32security.SE_PRIVILEGE_ENABLED)]
     win32security.AdjustTokenPrivileges(token, False, new_state)
     if win32api.GetLastError() == 1300:
-        print(f"\n[!] '{privilege_name}' isn't assigned to this account — can't enable it.\n")
+        print(f"\n[!] '{privilege_name}' isnt assigned to this account - cant enable it.\n")
     else:
         print(f"\n[+] '{privilege_name}' is now enabled.\n")
 
